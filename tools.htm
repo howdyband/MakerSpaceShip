@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tool Inventory | MakerSpaceShip</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 0.95em; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f4f4f4; color: #222; cursor: pointer; user-select: none; position: sticky; top: 0; }
+    th:hover { background-color: #e0e0e0; }
+    .cert-code { font-weight: bold; padding: 2px 6px; background: #eee; border: 1px solid #ccc; border-radius: 4px; }
+    .note { font-size: 0.9em; color: #555; font-style: italic; margin-bottom: 1rem; }
+    .incentive { color: #2e8b57; font-weight: bold; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <header>
+      <h1>Facility Tool & Equipment Inventory</h1>
+      <p class="hero-subtitle">Tools are grouped by certification class. Click any header to sort.</p>
+      <p class="incentive">Earning all the badges of the shop, tech studio, or music studio, earns $20 off per month.</p>
+    </header>
+
+    <main>
+      <h2>Building 307: The Shop</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tool / Item</th>
+            <th>Model</th>
+            <th>Serial # / Code</th>
+            <th>Cert Group</th>
+            <th>Cert Code</th>
+            <th>Status</th>
+            <th>Danger</th>
+            <th>Curve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- CNC & Lasers -->
+          <tr><td>Onefinity Elite Foreman 48”x48” CNC</td><td>Elite Foreman</td><td>N/A</td><td>Elite CNC</td><td><span class="cert-code">SH-1</span></td><td>Wishlist</td><td>4</td><td>5</td></tr>
+          <tr><td>xTool 55W CO2 Laser Cutter</td><td>55W CO2</td><td>N/A</td><td>Laser Cutter</td><td><span class="cert-code">SH-2</span></td><td>Wishlist</td><td>4</td><td>4</td></tr>
+          
+          <!-- Straight Cut Saws -->
+          <tr><td>SawStop PCS 3HP Table Saw</td><td>PCS 3HP</td><td>N/A</td><td>Straight Cut Saws</td><td><span class="cert-code">SH-3</span></td><td>Available</td><td>5</td><td>4</td></tr>
+          <tr><td>DeWalt 12" Double Bevel Sliding Compound Miter Saw</td><td>DWS709</td><td>130787</td><td>Straight Cut Saws</td><td><span class="cert-code">SH-3</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>DeWalt 60V Max 8-1/4" Cordless Table Saw</td><td>DCS7485</td><td>2020 40-CT 009737</td><td>Straight Cut Saws</td><td><span class="cert-code">SH-3</span></td><td>Available</td><td>5</td><td>4</td></tr>
+          <tr><td>Ridgid Portable Jobsite Table Saw</td><td>N/A</td><td>N/A</td><td>Straight Cut Saws</td><td><span class="cert-code">SH-3</span></td><td>Available</td><td>5</td><td>4</td></tr>
+          <tr><td>Rockwell 3-3/8" Compact Circular Saw</td><td>RK3440K</td><td>201316007167</td><td>Straight Cut Saws</td><td><span class="cert-code">SH-3</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>Black & Decker 7-1/4" Circular Saw (1.5 HP)</td><td>7308</td><td>N/A</td><td>Straight Cut Saws</td><td><span class="cert-code">SH-3</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          
+          <!-- Heavy Milling -->
+          <tr><td>Delta 13” Thickness Planer</td><td>13" Portable</td><td>N/A</td><td>Heavy Milling</td><td><span class="cert-code">SH-4</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>Floor Jointer</td><td>N/A</td><td>N/A</td><td>Heavy Milling</td><td><span class="cert-code">SH-4</span></td><td>Available</td><td>5</td><td>3</td></tr>
+          <tr><td>Woodpecker Extended Slab Flattener</td><td>Extended</td><td>N/A</td><td>Heavy Milling</td><td><span class="cert-code">SH-4</span></td><td>Available</td><td>3</td><td>3</td></tr>
+          <tr><td>Chicago Electric 3-1/4" Hand Planer</td><td>N/A</td><td>37454 1952</td><td>Heavy Milling</td><td><span class="cert-code">SH-4</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          
+          <!-- Singles & Specialty -->
+          <tr><td>Wood Lathe</td><td>N/A</td><td>N/A</td><td>Wood Lathe</td><td><span class="cert-code">SH-5</span></td><td>Available</td><td>4</td><td>4</td></tr>
+          <tr><td>Ceramic Kiln</td><td>N/A</td><td>N/A</td><td>Ceramics</td><td><span class="cert-code">SH-6</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          
+          <!-- Curve Cut Saws -->
+          <tr><td>18" Bandsaw</td><td>Laguna LT18</td><td>N/A</td><td>Curve Cut Saws</td><td><span class="cert-code">SH-7</span></td><td>Wishlist</td><td>4</td><td>3</td></tr>
+          <tr><td>Scroll Saw</td><td>N/A</td><td>N/A</td><td>Curve Cut Saws</td><td><span class="cert-code">SH-7</span></td><td>Available</td><td>2</td><td>2</td></tr>
+          <tr><td>Bosch Corded Jigsaw</td><td>N/A</td><td>N/A</td><td>Curve Cut Saws</td><td><span class="cert-code">SH-7</span></td><td>Available</td><td>2</td><td>2</td></tr>
+          
+          <!-- Powder Coating -->
+          <tr><td>Powder Coating Oven</td><td>N/A</td><td>N/A</td><td>Powder Coating</td><td><span class="cert-code">SH-8</span></td><td>Wishlist</td><td>3</td><td>2</td></tr>
+          <tr><td>Powder Coating Gun</td><td>N/A</td><td>N/A</td><td>Powder Coating</td><td><span class="cert-code">SH-8</span></td><td>Available</td><td>2</td><td>3</td></tr>
+          
+          <!-- Maslow CNC -->
+          <tr><td>Maslow CNC Router</td><td>Standard Kit</td><td>N/A</td><td>Maslow CNC</td><td><span class="cert-code">SH-9</span></td><td>Available</td><td>3</td><td>4</td></tr>
+          
+          <!-- Bench Tools & Hand Routers -->
+          <tr><td>Bench Grinder</td><td>N/A</td><td>N/A</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Drill Press</td><td>N/A</td><td>N/A</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Wishlist</td><td>3</td><td>2</td></tr>
+          <tr><td>Craftsman Router (2 HP)</td><td>N/A</td><td>N/A</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>Black & Decker Plunge Router (1.5 HP)</td><td>N/A</td><td>N/A</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>Ridgid Router (2 HP)</td><td>R2911</td><td>CS18434D649454</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>Ryobi Plunge Router (1.5 HP)</td><td>R175</td><td>112154 1511</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Available</td><td>4</td><td>3</td></tr>
+          <tr><td>Ridgid Trim Router (1.5 HP)</td><td>R2401</td><td>CS13174N C59362</td><td>Bench Tools</td><td><span class="cert-code">SH-10</span></td><td>Available</td><td>4</td><td>3</td></tr>
+
+          <!-- Sanders -->
+          <tr><td>Drum Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Wishlist</td><td>3</td><td>3</td></tr>
+          <tr><td>Oscillating Spindle Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Wishlist</td><td>3</td><td>2</td></tr>
+          <tr><td>Stationary Edge Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Makita 4"x24" Belt Sander</td><td>9403</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>DeWalt 20V Max XR Belt Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>DeWalt Corded Orbital Sanders (x2)</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          <tr><td>Ridgid Corded Orbital Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          <tr><td>Makita Corded Orbital Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          <tr><td>Makita Corded Sheet Sander</td><td>N/A</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          <tr><td>Wilton Palm Grip Sander</td><td>64005</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          <tr><td>Makita 1/4 Sheet Finishing Sander</td><td>BO4550</td><td>N/A</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          <tr><td>Ryobi Detail Sander</td><td>DS-1000</td><td>A3050 01147</td><td>Sanders</td><td><span class="cert-code">SH-11</span></td><td>Available</td><td>1</td><td>1</td></tr>
+          
+          <!-- Pneumatics & Grinders -->
+          <tr><td>Air Compressor</td><td>N/A</td><td>N/A</td><td>Pneumatics</td><td><span class="cert-code">SH-12</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>MAX SuperRoofer Coil Roofing Nailer</td><td>SuperRoofer</td><td>N/A</td><td>Pneumatics</td><td><span class="cert-code">SH-12</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Chicago Electric 4-1/2" Angle Grinder</td><td>60625</td><td>38030561</td><td>Pneumatics</td><td><span class="cert-code">SH-12</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Bosch Angle Grinder</td><td>GWS8-45</td><td>N/A</td><td>Pneumatics</td><td><span class="cert-code">SH-12</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Metabo Angle Grinder</td><td>N/A</td><td>N/A</td><td>Pneumatics</td><td><span class="cert-code">SH-12</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          
+          <!-- Cordless Platforms & Drills -->
+          <tr><td>DeWalt 20V Max 7-1/4" Circular Saw</td><td>DCS573</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>DeWalt 18V 2" 18 Ga. Brad Nailer</td><td>DC608</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>2</td></tr>
+          <tr><td>DeWalt 20V Max Plastic Collated Framing Nailer</td><td>DCN21PL</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Milwaukee M12 Hatchet Pruning Saw</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Milwaukee M12 Hackzall</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Milwaukee M12 Drill/Driver</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>1</td></tr>
+          <tr><td>Milwaukee M12 Impact Driver</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>1</td></tr>
+          <tr><td>Milwaukee M12 Multi-Tool</td><td>2426-20</td><td>C73AD210907029</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>1</td></tr>
+          <tr><td>DeWalt 20V Max Brushless Drill/Driver</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>1</td></tr>
+          <tr><td>DeWalt 20V Max Brushless Impact Driver</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>1</td></tr>
+          <tr><td>Paslode Cordless 16 Gauge Angled Finish Nailer</td><td>900600</td><td>0544 05495</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Heavy Duty 1/2" Drill / Mixer</td><td>N/A</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>2</td></tr>
+          <tr><td>Bosch 1/2" Drill VSR</td><td>1192 VSR</td><td>N/A</td><td>Cordless</td><td><span class="cert-code">SH-13</span></td><td>Available</td><td>2</td><td>2</td></tr>
+
+          <!-- Specialty Hand Tools -->
+          <tr><td>Electric Animal Shears (Rug Tufting)</td><td>N/A</td><td>N/A</td><td>Specialty</td><td><span class="cert-code">SH-14</span></td><td>Available</td><td>2</td><td>2</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Building 309: Tech Studio</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tool / Item</th>
+            <th>Model</th>
+            <th>Serial # / Code</th>
+            <th>Cert Group</th>
+            <th>Cert Code</th>
+            <th>Status</th>
+            <th>Danger</th>
+            <th>Curve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Kitchen Group -->
+          <tr><td>Stove & Oven</td><td>N/A</td><td>N/A</td><td>Kitchen</td><td><span class="cert-code">TS-1</span></td><td>Wishlist</td><td>4</td><td>2</td></tr>
+          <tr><td>Microwave</td><td>N/A</td><td>N/A</td><td>Kitchen</td><td><span class="cert-code">TS-1</span></td><td>Wishlist</td><td>1</td><td>1</td></tr>
+          <tr><td>Refrigerator</td><td>N/A</td><td>N/A</td><td>Kitchen</td><td><span class="cert-code">TS-1</span></td><td>Wishlist</td><td>1</td><td>1</td></tr>
+          <tr><td>Chest Freezer</td><td>N/A</td><td>N/A</td><td>Kitchen</td><td><span class="cert-code">TS-1</span></td><td>Wishlist</td><td>1</td><td>1</td></tr>
+
+          <!-- Ceramics -->
+          <tr><td>Pug Mill</td><td>N/A</td><td>N/A</td><td>Ceramics</td><td><span class="cert-code">SH-6</span></td><td>Available</td><td>3</td><td>2</td></tr>
+          <tr><td>Boss Electric Pottery Wheels (x2)</td><td>N/A</td><td>N/A</td><td>Ceramics</td><td><span class="cert-code">SH-6</span></td><td>Available</td><td>1</td><td>4</td></tr>
+
+          <!-- 3D Printing & Scanning -->
+          <tr><td>Bambu 3D Printer w/ AMS</td><td>P1S</td><td>N/A</td><td>3D Printing</td><td><span class="cert-code">TS-2</span></td><td>Available</td><td>2</td><td>4</td></tr>
+          <tr><td>3D Scanner</td><td>N/A</td><td>N/A</td><td>3D Printing</td><td><span class="cert-code">TS-2</span></td><td>Wishlist</td><td>1</td><td>3</td></tr>
+
+          <!-- Plastics/Molding -->
+          <tr><td>Vacuum Forming Machine</td><td>N/A</td><td>N/A</td><td>Plastics</td><td><span class="cert-code">TS-3</span></td><td>Wishlist</td><td>3</td><td>2</td></tr>
+
+          <!-- Electronics -->
+          <tr><td>Micro-Electronics & Soldering Station</td><td>N/A</td><td>N/A</td><td>Electronics</td><td><span class="cert-code">TS-4</span></td><td>Wishlist</td><td>3</td><td>4</td></tr>
+
+          <!-- Fabrics & Sewing -->
+          <tr><td>Multi-Needle Embroidery Machine</td><td>N/A</td><td>N/A</td><td>Embroidery</td><td><span class="cert-code">TS-5</span></td><td>Wishlist</td><td>2</td><td>5</td></tr>
+          <tr><td>Brother Serger</td><td>ST4031HD</td><td>N/A</td><td>Serger</td><td><span class="cert-code">TS-6</span></td><td>Wishlist</td><td>2</td><td>3</td></tr>
+
+          <!-- Heat Transfer -->
+          <tr><td>16x20 Clamshell Heat Press</td><td>N/A</td><td>N/A</td><td>Heat Transfer</td><td><span class="cert-code">TS-7</span></td><td>Wishlist</td><td>4</td><td>2</td></tr>
+
+          <!-- Screen Print -->
+          <tr><td>Screen Printing Station</td><td>N/A</td><td>N/A</td><td>Screen Print</td><td><span class="cert-code">TS-8</span></td><td>Available</td><td>1</td><td>3</td></tr>
+
+          <!-- Vinyl & Large Format Wrap -->
+          <tr><td>Vinyl Cutter</td><td>Venture / GS24</td><td>N/A</td><td>Vinyl & Wrap</td><td><span class="cert-code">TS-9</span></td><td>Wishlist</td><td>1</td><td>3</td></tr>
+          <tr><td>Roland Wide Format Printer</td><td>TrueVIS</td><td>N/A</td><td>Vinyl & Wrap</td><td><span class="cert-code">TS-9</span></td><td>Wishlist</td><td>2</td><td>5</td></tr>
+          <tr><td>54" Cold Roll Laminator</td><td>N/A</td><td>N/A</td><td>Vinyl & Wrap</td><td><span class="cert-code">TS-9</span></td><td>Wishlist</td><td>2</td><td>3</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Building 309: Music Studio</h2>
+      <p>Our large sound proof Wenger practice room contains many instruments, waiting for a jam session.</p>
+      <p class="note"><strong>Certification Requirement:</strong> To earn a badge for any instrument group, the member must demonstrate the ability to play a basic scale on each instrument within that group.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Instrument / Gear</th>
+            <th>Model</th>
+            <th>Serial # / Code</th>
+            <th>Cert Group</th>
+            <th>Cert Code</th>
+            <th>Status</th>
+            <th>Danger</th>
+            <th>Curve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Music Studio Tech -->
+          <tr><td>Soundproof Recording Booth</td><td>Wenger</td><td>N/A</td><td>Music Studio Tech</td><td><span class="cert-code">MS-1</span></td><td>Available</td><td>1</td><td>2</td></tr>
+          <tr><td>Studio Microphones (Shure/Sennheiser)</td><td>SM58 / MKE600</td><td>N/A</td><td>Music Studio Tech</td><td><span class="cert-code">MS-1</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Crown PA System & Amps</td><td>XLS2502</td><td>N/A</td><td>Music Studio Tech</td><td><span class="cert-code">MS-1</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Digital Piano</td><td>Yamaha</td><td>N/A</td><td>Music Studio Tech</td><td><span class="cert-code">MS-1</span></td><td>Available</td><td>1</td><td>2</td></tr>
+          <tr><td>27-inch iMac (Recording/Editing)</td><td>27-inch</td><td>N/A</td><td>Music Studio Tech</td><td><span class="cert-code">MS-1</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>TC Helicon VoiceLive Play Acoustic</td><td>VoiceLive</td><td>N/A</td><td>Music Studio Tech</td><td><span class="cert-code">MS-1</span></td><td>Available</td><td>1</td><td>3</td></tr>
+
+          <!-- Fretted Strings -->
+          <tr><td>5-String Banjo</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Electric Guitar</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Dobro</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Classical Guitar</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Steel Acoustic Guitar</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Mandolin</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Ukulele</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>2</td></tr>
+          <tr><td>Mountain Dulcimer</td><td>N/A</td><td>N/A</td><td>Fretted Strings</td><td><span class="cert-code">MS-2</span></td><td>Available</td><td>1</td><td>2</td></tr>
+
+          <!-- Fretless -->
+          <tr><td>Violin</td><td>N/A</td><td>N/A</td><td>Fretless</td><td><span class="cert-code">MS-3</span></td><td>Available</td><td>1</td><td>5</td></tr>
+          <tr><td>Viola</td><td>N/A</td><td>N/A</td><td>Fretless</td><td><span class="cert-code">MS-3</span></td><td>Available</td><td>1</td><td>5</td></tr>
+          <tr><td>Cello</td><td>N/A</td><td>N/A</td><td>Fretless</td><td><span class="cert-code">MS-3</span></td><td>Available</td><td>1</td><td>4</td></tr>
+
+          <!-- Percussion -->
+          <tr><td>Hammered Dulcimer</td><td>N/A</td><td>N/A</td><td>Percussion</td><td><span class="cert-code">MS-4</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Hand Pan Drum</td><td>N/A</td><td>N/A</td><td>Percussion</td><td><span class="cert-code">MS-4</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Steel Drum</td><td>N/A</td><td>N/A</td><td>Percussion</td><td><span class="cert-code">MS-4</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Djembe</td><td>N/A</td><td>N/A</td><td>Percussion</td><td><span class="cert-code">MS-4</span></td><td>Available</td><td>1</td><td>2</td></tr>
+          <tr><td>Congas</td><td>N/A</td><td>N/A</td><td>Percussion</td><td><span class="cert-code">MS-4</span></td><td>Available</td><td>1</td><td>2</td></tr>
+          <tr><td>Bongos</td><td>N/A</td><td>N/A</td><td>Percussion</td><td><span class="cert-code">MS-4</span></td><td>Available</td><td>1</td><td>1</td></tr>
+
+          <!-- Winds -->
+          <tr><td>Silver Flute</td><td>N/A</td><td>N/A</td><td>Winds</td><td><span class="cert-code">MS-5</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Native American Flute</td><td>N/A</td><td>N/A</td><td>Winds</td><td><span class="cert-code">MS-5</span></td><td>Available</td><td>1</td><td>2</td></tr>
+          <tr><td>End Blown Flute</td><td>N/A</td><td>N/A</td><td>Winds</td><td><span class="cert-code">MS-5</span></td><td>Available</td><td>1</td><td>3</td></tr>
+
+          <!-- Brass -->
+          <tr><td>Trumpet</td><td>N/A</td><td>N/A</td><td>Brass</td><td><span class="cert-code">MS-6</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Trombone</td><td>N/A</td><td>N/A</td><td>Brass</td><td><span class="cert-code">MS-6</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Flugelhorn</td><td>N/A</td><td>N/A</td><td>Brass</td><td><span class="cert-code">MS-6</span></td><td>Wishlist</td><td>1</td><td>4</td></tr>
+
+          <!-- Reeds -->
+          <tr><td>Clarinet</td><td>N/A</td><td>N/A</td><td>Reeds</td><td><span class="cert-code">MS-7</span></td><td>Available</td><td>1</td><td>4</td></tr>
+          <tr><td>Tenor Saxophone</td><td>N/A</td><td>N/A</td><td>Reeds</td><td><span class="cert-code">MS-7</span></td><td>Available</td><td>1</td><td>3</td></tr>
+          <tr><td>Alto Saxophone</td><td>N/A</td><td>N/A</td><td>Reeds</td><td><span class="cert-code">MS-7</span></td><td>Wishlist</td><td>1</td><td>3</td></tr>
+          <tr><td>Harmonica</td><td>N/A</td><td>N/A</td><td>Reeds</td><td><span class="cert-code">MS-7</span></td><td>Available</td><td>1</td><td>2</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('table').forEach(table => {
+        table.querySelectorAll('th').forEach((th, index) => {
+          th.addEventListener('click', () => {
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const isAsc = th.classList.contains('asc');
+            
+            table.querySelectorAll('th').forEach(h => h.classList.remove('asc', 'desc'));
+            th.classList.add(isAsc ? 'desc' : 'asc');
+            const direction = isAsc ? -1 : 1;
+
+            rows.sort((a, b) => {
+              let aVal = a.cells[index].innerText.trim();
+              let bVal = b.cells[index].innerText.trim();
+              
+              let aNum = parseFloat(aVal.replace(/[^0-9.-]+/g, ''));
+              let bNum = parseFloat(bVal.replace(/[^0-9.-]+/g, ''));
+
+              if (!isNaN(aNum) && !isNaN(bNum)) {
+                return (aNum - bNum) * direction;
+              }
+              return aVal.localeCompare(bVal) * direction;
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+          });
+        });
+      });
+    });
+  </script>
+
+<!-- Link to the dynamic navigation menu -->
+  <script src="header.js"></script>
+  <!-- Link to the dynamic footer -->
+  <script src="footer.js"></script>
+</body>
+</html>

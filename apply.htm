@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Membership Application | MakerSpaceShip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>MakerSpace Membership Application</h1>
+      <p class="hero-subtitle">Tell us what you want to build, and what you can teach.</p>
+<p><a href="release.htm">Required Liability Waiver</a> </p>
+    </header>
+
+    <main>
+      <form action="#" method="POST">
+        
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+<p>
+Youth members, age 14 - 17, are only allowed to work in the Maker Studio (309), not the Work Shop (307). <br>Adult members are allowed in both areas.
+</p>
+        <div class="form-group">
+          <label for="level">Desired Membership Level</label>
+          <select id="level" name="level">
+            <option value="standard">Standard Maker; normal hours ($70/mo)</option>
+            <option value="advanced">Advanced Maker; 24/7 Access ($90/mo - requires sponsor/vetting)</option>
+<option value="youth">Youth ages 14 to 17; rigorous safety tests ($20/mo)
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Select Eligible Discounts (-$20 each, Stackable up to $60 off per month!)</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="discMentor" name="discMentor">
+            <label for="discMentor">Mentor (I will pass a Siuslaw School District background check to work with youth)</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="discSafety" name="discSafety">
+            <label for="discSafety">Safety (I hold current CPR/First Aid certification and OSHA-10)</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="discTrade" name="discTrade">
+            <label for="discTrade">Trade Expert (I hold an active professional certification: CCB, AWS, FAA107, HAM, etc.)</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="discHost" name="discHost">
+            <label for="discHost">Host/Captain (I will volunteer 10 hrs/mo monitoring the shop or retail gallery)</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="goals">What projects are you interested in accomplishing here?</label>
+          <textarea id="goals" name="goals" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="teach">What specific skills, tools, or classes could you teach or mentor others in?</label>
+          <textarea id="teach" name="teach" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="learn">What skills or classes are you most interested in learning?</label>
+          <textarea id="learn" name="learn" rows="3" required></textarea>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </main>
+  </div>
+    </main>
+  </div>
+
+  <!-- Link to the dynamic navigation menu -->
+  <script src="header.js"></script>
+  <!-- Link to the dynamic footer -->
+  <script src="footer.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>

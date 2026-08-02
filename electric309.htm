@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Equipment Load & Circuit Map</title>
+    
+    <!-- Reference to the provided stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- Reference to external header navigation script -->
+    <script src="../header.js" defer></script>
+
+    <style>
+        /* Basic table styling to complement the provided style.css */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: var(--white);
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+        th {
+            background-color: var(--accent-light);
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <div class="highlight-box">
+            <strong>Building 307:</strong> Revised Shop Equipment Load & Circuit Map
+        </div>
+
+        <h2>Panel A: Main 200A 3-Phase Panel (Right Wall near Grinder)</h2>
+        <p>This panel handles the heavy heat equipment, the metalworking zone, the classroom, one EV charger, and the heavy feeder breaker to the woodshop subpanel.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool / Item</th>
+                    <th>Est. Voltage</th>
+                    <th>Est. Amperage</th>
+                    <th>Circuit Strategy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Subpanel Feeder</strong></td>
+                    <td>208V/240V</td>
+                    <td>100A</td>
+                    <td><strong>Dedicated 100A (3-Pole or 2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Ceramic Kiln</strong></td>
+                    <td>208V/240V</td>
+                    <td>30A - 50A</td>
+                    <td><strong>Dedicated 50A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Powder Coating Oven</strong></td>
+                    <td>208V/240V</td>
+                    <td>30A - 40A</td>
+                    <td><strong>Dedicated 40A (2-Pole)</strong></td>
+                </tr>
+                
+                <!-- FUTURE WELDING EQUIPMENT ?
+                <tr>
+                    <td><strong>TIG Welder</strong> <em>(Future / Front Right)</em></td>
+                    <td>208V/240V</td>
+                    <td>30A - 50A</td>
+                    <td><strong>Dedicated 50A (2-Pole)</strong> <em>(Hold space)</em></td>
+                </tr>
+                <tr>
+                    <td><strong>MIG Welder</strong> <em>(Future / Front Right)</em></td>
+                    <td>208V/240V</td>
+                    <td>30A - 50A</td>
+                    <td><strong>Dedicated 50A (2-Pole)</strong> <em>(Hold space)</em></td>
+                </tr>
+                -->
+
+                <!-- FUTURE PLASMA CUTTER ?
+                <tr>
+                    <td><strong>Plasma Cutter</strong> <em>(Future)</em></td>
+                    <td>208V/240V</td>
+                    <td>30A - 50A</td>
+                    <td><strong>Dedicated 50A (2-Pole)</strong> <em>(Hold space)</em></td>
+                </tr>
+                -->
+
+                <tr>
+                    <td><strong>W4CC EV Charger 2</strong> <em>(Center Bay)</em></td>
+                    <td>208V/240V</td>
+                    <td>19A Continuous</td>
+                    <td><strong>Dedicated 30A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>xTool 55W CO2 Laser Cutter</strong></td>
+                    <td>120V</td>
+                    <td>5A - 10A</td>
+                    <td><strong>Dedicated 20A (1-Pole)</strong> <em>(Isolated for motherboard)</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Bench Grinder</strong></td>
+                    <td>120V</td>
+                    <td>5A - 8A</td>
+                    <td><strong>Shared Circuit A:</strong> (120V, 20A) Metal Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>Drill Press</strong></td>
+                    <td>120V</td>
+                    <td>5A - 8A</td>
+                    <td><strong>Shared Circuit A:</strong> (120V, 20A) Metal Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>Stationary Edge Sander</strong></td>
+                    <td>120V</td>
+                    <td>10A - 15A</td>
+                    <td><strong>Shared Circuit A:</strong> (120V, 20A) Metal Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>Oscillating Spindle Sander</strong></td>
+                    <td>120V</td>
+                    <td>5A - 8A</td>
+                    <td><strong>Shared Circuit A:</strong> (120V, 20A) Metal Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>Scroll Saw</strong></td>
+                    <td>120V</td>
+                    <td>3A - 5A</td>
+                    <td><strong>Shared Circuit B:</strong> (120V, 20A) Clean Room</td>
+                </tr>
+                <tr>
+                    <td><strong>Powder Coating Gun</strong></td>
+                    <td>120V</td>
+                    <td>&lt; 5A</td>
+                    <td><strong>Shared Circuit B:</strong> (120V, 20A) Clean Room</td>
+                </tr>
+                <tr>
+                    <td><strong>Orbital & Palm Sanders</strong></td>
+                    <td>120V</td>
+                    <td>3A - 5A</td>
+                    <td><strong>Shared Circuit B:</strong> (120V, 20A) Clean Room</td>
+                </tr>
+                <tr>
+                    <td><strong>DeWalt / Milwaukee Chargers</strong></td>
+                    <td>120V</td>
+                    <td>2A - 4A</td>
+                    <td><strong>Shared Circuit C:</strong> (120V, 15A) Wall Outlets</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Panel B: 100A Subpanel (Left Wall near Miter Saw)</h2>
+        <p>Acts as the dedicated hub for the entire left side of the building, keeping conduit runs to the wood tools, CNCs, and left-side EV charger extremely short.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool / Item</th>
+                    <th>Est. Voltage</th>
+                    <th>Est. Amperage</th>
+                    <th>Circuit Strategy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>SawStop PCS 3HP Table Saw</strong></td>
+                    <td>208V/240V</td>
+                    <td>13A - 15A</td>
+                    <td><strong>Dedicated 20A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Air Compressor</strong> <em>(Bottom Left)</em></td>
+                    <td>208V/240V</td>
+                    <td>15A - 20A</td>
+                    <td><strong>Dedicated 20A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Jet Dust Collection</strong></td>
+                    <td>208V/240V</td>
+                    <td>15A - 20A</td>
+                    <td><strong>Dedicated 20A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Floor Jointer</strong></td>
+                    <td>208V/240V</td>
+                    <td>12A - 15A</td>
+                    <td><strong>Dedicated 20A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Drum Sander</strong></td>
+                    <td>208V/240V</td>
+                    <td>15A - 20A</td>
+                    <td><strong>Dedicated 20A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>W4CC EV Charger 1</strong> <em>(Left Bay)</em></td>
+                    <td>208V/240V</td>
+                    <td>19A Continuous</td>
+                    <td><strong>Dedicated 30A (2-Pole)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>18" Bandsaw</strong> <em>(Future)</em></td>
+                    <td>208V/240V</td>
+                    <td>10A - 15A</td>
+                    <td><strong>Dedicated 20A (2-Pole)</strong> <em>(Hold space)</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Onefinity Elite CNC</strong> <em>(Back Wall)</em></td>
+                    <td>120V</td>
+                    <td>15A</td>
+                    <td><strong>Dedicated 20A (1-Pole)</strong> <em>(Isolated)</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Maslow CNC Router</strong></td>
+                    <td>120V</td>
+                    <td>15A</td>
+                    <td><strong>Dedicated 20A (1-Pole)</strong> <em>(Isolated)</em></td>
+                </tr>
+                <tr>
+                    <td><strong>13" Delta Thickness Planer</strong></td>
+                    <td>120V</td>
+                    <td>15A</td>
+                    <td><strong>Shared Circuit D:</strong> (120V, 20A) Wood Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>12" Delta Compound Miter Saw</strong></td>
+                    <td>120V</td>
+                    <td>15A</td>
+                    <td><strong>Shared Circuit D:</strong> (120V, 20A) Wood Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>Wood Lathe</strong></td>
+                    <td>120V</td>
+                    <td>12A - 15A</td>
+                    <td><strong>Shared Circuit E:</strong> (120V, 20A) Project Storage Wall</td>
+                </tr>
+                <tr>
+                    <td><strong>Woodpecker Slab Flattener</strong></td>
+                    <td>120V</td>
+                    <td>15A</td>
+                    <td><strong>Shared Circuit E:</strong> (120V, 20A) Project Storage Wall</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+<center>
+<img src="floorplan309.jpeg">
+</center>
+
+    <!-- Reference to external footer script -->
+    <script src="../footer.js"></script>
+    
+</body>
+</html>
