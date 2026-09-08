@@ -1,7 +1,7 @@
 // header.js
 
 const navContent = `
-  <a href="index.htm">Home</a>
+  <a href="index.html">Home</a>
   <a href="prices.htm">Pricing</a>
   <a href="safety.htm">Safety Protocols</a>
   <a href="tools.htm">Tool Inventory</a>
