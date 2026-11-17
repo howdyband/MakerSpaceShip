@@ -1,97 +1,307 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Membership Application | MakerSpaceShip</title>
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
   <div class="container">
+
     <header>
+
       <h1>MakerSpace Membership Application</h1>
-      <p class="hero-subtitle">Tell us what you want to build, and what you can teach.</p>
-<p><a href="release.htm">Required Liability Waiver</a> </p>
+
+      <p class="hero-subtitle">Stacked discounts reduce membership to no lower than $10 per month</p>
+
+      <p><a href="release.htm">Required Liability Waiver</a></p>
+
     </header>
 
     <main>
-      <form action="#" method="POST">
-        
+
+      <form
+
+        action="https://script.google.com/macros/s/AKfycbylc7V_4DVYnfm1u8jin4ebGziKRVNnl6r5xLF1PxVVOMZ5eK4N_MVkvmIsc1JdwVyV/exec"
+
+        method="POST"
+
+        accept-charset="UTF-8">
+
+        <!-- Spam protection: leave this hidden field blank. -->
+
+        <div class="form-group" aria-hidden="true"
+
+             style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
+
+          <label for="website">Leave this field blank</label>
+
+          <input type="text" id="website" name="website"
+
+                 tabindex="-1" autocomplete="off">
+
+        </div>
+
         <div class="form-group">
+
           <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" required>
+
+          <input type="text" id="fullName" name="fullName"
+
+                 autocomplete="name" required>
+
         </div>
 
         <div class="form-group">
+
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
+
+          <input type="email" id="email" name="email"
+
+                 autocomplete="email" required>
+
         </div>
 
         <div class="form-group">
+
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required>
+
+          <input type="tel" id="phone" name="phone"
+
+                 autocomplete="tel" required>
+
         </div>
-<p>
-Youth members, age 14 - 17, are only allowed to work in the Maker Studio (309), not the Work Shop (307). <br>Adult members are allowed in both areas.
-</p>
+
+        <p>
+
+          Youth members, ages 11–17, are only allowed to work in the
+
+          Maker Studio (309), not the Workshop (307).
+
+          Adult members are allowed in both areas.
+
+        </p>
+
         <div class="form-group">
-          <label for="level">Desired Membership Level</label>
-          <select id="level" name="level">
-            <option value="standard">Standard Maker; normal hours ($70/mo)</option>
-            <option value="advanced">Advanced Maker; 24/7 Access ($90/mo - requires sponsor/vetting)</option>
-<option value="youth">Youth ages 14 to 17; rigorous safety tests ($20/mo)
+
+          <label for="level">Select Membership Level</label>
+
+          <select id="level" name="level" required>
+
+            <option value="">Member level (before discounts)</option>
+
+            <option value="standard">
+
+              Standard Community Maker -- regular managed hours ($90/month)
+
+            </option>
+
+            <option value="trusted">
+
+              Trusted Maker -- 24/7 access ($120/month; requires sponsor endorsement)
+
+            </option>
+
+            <option value="youth">
+
+              Youth -- ages 11–17; rigorous safety tests ($20/month)
+
+            </option>
+
+            <option value="learnsteam">
+
+              LearnSTEAM Alternative School member (free)
+
+            </option>
+
           </select>
+
+        </div>
+
+        <fieldset class="form-group">
+
+          <legend>Eligible Monthly Discounts</legend>
+
+          <p>
+
+            Select every discount for which you qualify. Each listed
+
+            discount is $20/month, subject to membership review and
+
+            the final discount policy.
+
+          </p>
+
+          <div class="checkbox-group">
+
+            <input type="checkbox" id="discMentor"
+
+                   name="discounts" value="Mentor">
+
+            <label for="discMentor">
+
+              Mentor (-$20/month): I will pass a Siuslaw School District
+
+              background check to work with LearnSTEAM youth.
+
+            </label>
+
+          </div>
+
+          <div class="checkbox-group">
+
+            <input type="checkbox" id="discSafety"
+
+                   name="discounts" value="Safety">
+
+            <label for="discSafety">
+
+              Safety (-$20/month): I can provide proof of current
+
+              CPR/First Aid and OSHA-10 certification.
+
+            </label>
+
+          </div>
+
+          <div class="checkbox-group">
+
+            <input type="checkbox" id="discTrade"
+
+                   name="discounts" value="Trade Expert">
+
+            <label for="discTrade">
+
+              Trade Expert (-$20/month): I hold an relevant professional
+
+              certification or journey-level card
+
+              (for example CCB, AWS, ASE, FAA Part 107, HAM, NIMS Machining,
+
+              Journeyman Electrician, IPC Soldering, or OSHA 30).
+
+            </label>
+
+          </div>
+
+          <div class="checkbox-group">
+
+            <input type="checkbox" id="discVolunteer"
+
+                   name="discounts" value="Volunteer">
+
+            <label for="discVolunteer">
+
+              Volunteer (-$20/month): I contribute 10 or more hours per
+
+              week at Habitat for Humanity, Florence Foodshare,
+
+              or a local church.
+
+            </label>
+
+          </div>
+
+          <div class="checkbox-group">
+
+            <input type="checkbox" id="discHost"
+
+                   name="discounts" value="Host/Captain">
+
+            <label for="discHost">
+
+              Host/Captain (-$20/month): I commit to 10 hours per month
+
+              monitoring shop safety or hosting the retail storefront.
+
+            </label>
+
+          </div>
+
+          <div class="checkbox-group">
+
+            <input type="checkbox" id="discSafetySkills"
+
+                   name="discounts" value="Gain Safety Certifications">
+
+            <label for="discSafetySkills">
+
+              Gain Safety Certifications (-$20/month): I will demonstrate
+
+              competent and safe operation of all tools in the workshop,
+
+              tech studio, or music studio.
+
+            </label>
+
+          </div>
+
+        </fieldset>
+
+        <div class="form-group">
+
+          <label for="goals">
+
+            What projects are you interested in accomplishing here?
+
+          </label>
+
+          <textarea id="goals" name="goals" rows="4" required></textarea>
+
         </div>
 
         <div class="form-group">
-          <label>Select Eligible Discounts (-$20 each, Stackable up to $60 off per month!)</label>
-          <div class="checkbox-group">
-            <input type="checkbox" id="discMentor" name="discMentor">
-            <label for="discMentor">Mentor (I will pass a Siuslaw School District background check to work with youth)</label>
-          </div>
-          <div class="checkbox-group">
-            <input type="checkbox" id="discSafety" name="discSafety">
-            <label for="discSafety">Safety (I hold current CPR/First Aid certification and OSHA-10)</label>
-          </div>
-          <div class="checkbox-group">
-            <input type="checkbox" id="discTrade" name="discTrade">
-            <label for="discTrade">Trade Expert (I hold an active professional certification: CCB, AWS, FAA107, HAM, etc.)</label>
-          </div>
-          <div class="checkbox-group">
-            <input type="checkbox" id="discHost" name="discHost">
-            <label for="discHost">Host/Captain (I will volunteer 10 hrs/mo monitoring the shop or retail gallery)</label>
-          </div>
+
+          <label for="teach">
+
+            What specific skills, tools, or classes could you teach
+
+            or mentor others in?
+
+          </label>
+
+          <textarea id="teach" name="teach" rows="4" required></textarea>
+
         </div>
 
         <div class="form-group">
-          <label for="goals">What projects are you interested in accomplishing here?</label>
-          <textarea id="goals" name="goals" rows="3" required></textarea>
+
+          <label for="learn">
+
+            What skills/knowledge are you most interested in acquiring?
+
+          </label>
+
+          <textarea id="learn" name="learn" rows="4" required></textarea>
+
         </div>
 
-        <div class="form-group">
-          <label for="teach">What specific skills, tools, or classes could you teach or mentor others in?</label>
-          <textarea id="teach" name="teach" rows="3" required></textarea>
-        </div>
+        <p>
 
-        <div class="form-group">
-          <label for="learn">What skills or classes are you most interested in learning?</label>
-          <textarea id="learn" name="learn" rows="3" required></textarea>
-        </div>
+          <button type="submit">Submit Application</button>
 
-        <button type="submit">Submit Application</button>
+        </p>
+
       </form>
+
     </main>
-  </div>
-    </main>
+
   </div>
 
-  <!-- Link to the dynamic navigation menu -->
   <script src="header.js"></script>
-  <!-- Link to the dynamic footer -->
+
   <script src="footer.js"></script>
-</body>
-</html>
-
 
 </body>
+
 </html>
